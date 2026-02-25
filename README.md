@@ -39,8 +39,8 @@ forest-edge-effects-via-e3sm/
 | Dataset | Source | Resolution | Notes |
 |---------|--------|------------|-------|
 | GLAD Forest Height 2020 | [UMD GLAD](https://glad.umd.edu/) | 0.00025° WGS84 | Potapov et al. 2020; 0 = no-data |
-| LCMAP Forest Depth | USGS LCMAP | 30m Albers | `LCMAP_CU_{year}_V13_LCPRI.tif`; values 1–5 (5=interior) |
-| MODIS PFT (500m WGS84) | ELM/CLM ancillary | 500m WGS84 | `ELM_PFT_{year}-WGS84-merged.tif`; PFTs 1–8 are trees |
+| LCMAP Forest Depth | Kang et al. (in prep.) | 30m Albers | `LCMAP_CU_{year}_V13_LCPRI.tif`; values 1–5 (5=interior); derived from USGS LCMAP |
+| MODIS PFT (500m WGS84) | [build_surface_dataset_for_ELM](https://github.com/daleihao/build_surface_dataset_for_ELM) | 500m WGS84 | `ELM_PFT_{year}-WGS84-merged.tif`; PFTs 1–8 are trees |
 | ELM surfdata template | ELM ancillary | 0.5° global | `surfdata_0.5x0.5_simyr2010_c251122.nc` |
 | MODIS PFT LAI stream | ELM ancillary | 0.5° global | `MODISPFTLAI_0.5x0.5_c140711.nc` |
 | CONUS LAI (30m) | [Landsat-LAI_YanghuiKang](https://github.com/youhangkai/Landsat-LAI_YanghuiKang) | 30m Albers | Monthly, 2001–2014; derived from Landsat using the model in Kang et al. |
@@ -202,4 +202,10 @@ Mapping and monitoring global forest canopy height through integration of GEDI a
 *Remote Sensing of Environment*, 112165. https://doi.org/10.1016/j.rse.2020.112165
 
 Forest depth data:
-USGS LCMAP — Land Change Monitoring, Assessment, and Projection (LCMAP).
+The forest depth dataset (values 1–5, where 5 = interior forest) was derived from USGS LCMAP
+land cover data by the authors of this project. Please cite:
+Kang, Y., et al. (in preparation). Human-induced disturbances accelerate forest edge expansion in the U.S.
+
+MODIS PFT (500m WGS84):
+The ELM PFT dataset was generated following the pipeline described in:
+https://github.com/daleihao/build_surface_dataset_for_ELM
