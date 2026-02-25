@@ -43,7 +43,7 @@ forest-edge-effects-via-e3sm/
 | MODIS PFT (500m WGS84) | ELM/CLM ancillary | 500m WGS84 | `ELM_PFT_{year}-WGS84-merged.tif`; PFTs 1–8 are trees |
 | ELM surfdata template | ELM ancillary | 0.5° global | `surfdata_0.5x0.5_simyr2010_c251122.nc` |
 | MODIS PFT LAI stream | ELM ancillary | 0.5° global | `MODISPFTLAI_0.5x0.5_c140711.nc` |
-| CONUS LAI (30m) | USGS/LCMAP | 30m Albers | Monthly, 2001–2014 |
+| CONUS LAI (30m) | [Landsat-LAI_YanghuiKang](https://github.com/youhangkai/Landsat-LAI_YanghuiKang) | 30m Albers | Monthly, 2001–2014; derived from Landsat using the model in Kang et al. |
 
 ---
 
@@ -185,7 +185,12 @@ OUT_DIR    = "/path/to/Canopy_Height/processed"
 
 ## Citation
 
-Forest height data:
+30m Landsat LAI for CONUS:
+The 30m monthly LAI data over CONUS is derived from Landsat imagery using the model described in:
+Kang, Y., et al. — see [Landsat-LAI_YanghuiKang](https://github.com/youhangkai/Landsat-LAI_YanghuiKang) for the full model code and methodology.
+
+Forest canopy height data:
+The canopy height data used in this project is from Peter Potapov's 2020 global forest canopy height dataset (GLAD lab, University of Maryland). Data available at: https://glad.umd.edu/dataset/gedi
 Potapov, P., et al. (2021). Mapping global forest canopy height through integration of GEDI and Landsat data. *Remote Sensing of Environment*, 253, 112165.
 
 Forest depth data:
