@@ -190,8 +190,16 @@ The 30m monthly LAI data over CONUS is derived from Landsat imagery using the mo
 Kang, Y., et al. — see [Landsat-LAI_YanghuiKang](https://github.com/youhangkai/Landsat-LAI_YanghuiKang) for the full model code and methodology.
 
 Forest canopy height data:
-The canopy height data used in this project is from Peter Potapov's 2020 global forest canopy height dataset (GLAD lab, University of Maryland). Data available at: https://glad.umd.edu/dataset/gedi
-Potapov, P., et al. (2021). Mapping global forest canopy height through integration of GEDI and Landsat data. *Remote Sensing of Environment*, 253, 112165.
+The canopy height data used in this project is the **Forest Height 2020** layer from the
+[GLAD Global Land Cover and Land Use Change 2000–2020](https://glad.umd.edu/dataset/GLCLUC2020) dataset
+(GLAD lab, University of Maryland). Forest is defined as wildland, managed, and planted tree cover
+(including agroforestry and orchards) with height >= 3m. Forest height was mapped globally using a
+Landsat-based model calibrated with GEDI observations. Data are provided as 10x10 degree GeoTIFF tiles
+(WGS84, pixel value = forest height in meters).
+Potapov, P., Li, X., Hernandez-Serna, A., Tyukavina, A., Hansen, M.C., Kommareddy, A., Pickens, A.,
+Turubanova, S., Tang, H., Silva, C.E., Armston, J., Dubayah, R., Blair, J.B., Hofton, M. (2020).
+Mapping and monitoring global forest canopy height through integration of GEDI and Landsat data.
+*Remote Sensing of Environment*, 112165. https://doi.org/10.1016/j.rse.2020.112165
 
 Forest depth data:
 USGS LCMAP — Land Change Monitoring, Assessment, and Projection (LCMAP).
