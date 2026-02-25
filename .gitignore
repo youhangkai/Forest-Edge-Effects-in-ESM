@@ -1,0 +1,52 @@
+# Data files — never commit large rasters or NetCDF files
+*.tif
+*.nc
+*.tiff
+*.hdf
+*.h5
+
+# Processed data directories
+Canopy_Height/
+LAI_500m/
+LAI_revised/
+surfdata_revised/
+LAI_processed/
+CONUS_LAI/
+CONUS_Forest_Depth/
+PFT/
+
+# Logs
+*.log
+nohup.out
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
