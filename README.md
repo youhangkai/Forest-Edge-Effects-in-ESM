@@ -9,11 +9,13 @@ stratified by interior vs. exterior forest pixels using forest depth data.
 Forest edges differ structurally and functionally from forest interiors.
 This project creates a 3×3 scenario matrix of ELM surface/stream inputs:
 
-|  | LAI_v1 | LAI_v2 | LAI_v3 |
+| CH \\ LAI | v1 | v2 | v3 |
 |---|---|---|---|
-| CH_v1 | CH_v1 + LAI_v1 | CH_v1 + LAI_v2 | CH_v1 + LAI_v3 |
-| CH_v2 | CH_v2 + LAI_v1 | CH_v2 + LAI_v2 | CH_v2 + LAI_v3 |
-| CH_v3 | CH_v3 + LAI_v1 | CH_v3 + LAI_v2 | CH_v3 + LAI_v3 |
+| v1 | CH_v1 + LAI_v1 | CH_v1 + LAI_v2 | CH_v1 + LAI_v3 |
+| v2 | CH_v2 + LAI_v1 | CH_v2 + LAI_v2 | CH_v2 + LAI_v3 |
+| v3 | CH_v3 + LAI_v1 | CH_v3 + LAI_v2 | CH_v3 + LAI_v3 |
+
+**Definitions:** `v1` = area-weighted; `v2` = exterior forest; `v3` = interior forest.
 **Note:** `v1` denotes area-weighted values, `v2` denotes exterior-forest values, and `v3` denotes interior-forest values.
 ---
 
